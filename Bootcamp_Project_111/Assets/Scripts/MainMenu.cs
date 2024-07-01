@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    GameObject maincanvas;
+    [SerializeField]
+    GameObject optionscanvas;
     public void playLocal()
     {
 
@@ -15,7 +19,10 @@ public class MainMenu : MonoBehaviour
     }
     public void options()
     {
-        SceneManager.LoadScene("OptionsMenu");
+        //SceneManager.LoadScene("OptionsMenu");
+        maincanvas.SetActive(false);   
+        optionscanvas.SetActive(true);
+        Debug.Log("hata");
     }
     public void quit()
     {
@@ -23,6 +30,9 @@ public class MainMenu : MonoBehaviour
     }
     public void HomeButton()
     {
-        SceneManager.LoadScene("mainmenu");
+        //SceneManager.LoadScene("mainmenu");
+        maincanvas.SetActive(true);
+        optionscanvas.SetActive(false);
+       
     }
 }

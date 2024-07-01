@@ -18,11 +18,10 @@ public class MainMenu : MonoBehaviour
 
     }
     public void options()
-    {
-        //SceneManager.LoadScene("OptionsMenu");
+    {   
         maincanvas.SetActive(false);   
         optionscanvas.SetActive(true);
-        Debug.Log("hata");
+      
     }
     public void quit()
     {
@@ -30,7 +29,6 @@ public class MainMenu : MonoBehaviour
     }
     public void HomeButton()
     {
-        //SceneManager.LoadScene("mainmenu");
         maincanvas.SetActive(true);
         optionscanvas.SetActive(false);
        
